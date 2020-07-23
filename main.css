@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*Puede usarse % o px*/
+    /*Marca el tamaño de las columnas para los grid o grillas*/
+    grid-template-rows: auto 250px;
+    /*grid-template-rows: auto 250px; ajusta las grillas en caso de que el tamaño sea pequeño y el contenido sea extenso*/
+    /*Alto de cada grid*/
+    gap: 1em;
+    /*Espaciado entre las grillas
+    column-gap: ---> Espacio solo para columnas
+    row-gap:  ---> Espacio solo para filas*/
+}
+
+
+/*.grid valida el uso de los estilos para los que esten dentro de ID=grid*/
+
+.grid div {
+    background: grey;
+    padding: 1em;
+    /*Separación entre los textos*/
+}
+
+.grid div:hover {
+    /*Pinta un border cuando el cursor se posiciona encima del texto*/
+    border: 2px solid yellow;
+}
